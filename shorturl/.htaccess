@@ -1,0 +1,6 @@
+IndexIgnore *
+DirectoryIndex index.php
+
+RewriteEngine On
+RewriteBase /shorturl
+RewriteRule ^([a-z0-9]+)$ index.php?url=$1 [L]
